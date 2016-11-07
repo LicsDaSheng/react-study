@@ -2,7 +2,7 @@ import React, { Component , PropTypes } from 'react';
 
 // 采用antd的UI组件
 import { Table, message, Popconfirm } from 'antd';
-import 'antd/dist/antd.css';
+import 'antd/dist/antd.less';
 
 const UserList = ({
 	total,

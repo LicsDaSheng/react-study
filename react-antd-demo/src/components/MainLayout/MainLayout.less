@@ -1,6 +1,12 @@
 body{
-	background-color: #ececec !important;
+	background-color: #f0f3f4 !important;
+    font-family: "Microsoft YaHei";
+    font-size: .28em;
+    line-height: 1;
+    color: #333;
 }
+
+
 
 .container {
     position: relative;
@@ -9,15 +15,19 @@ body{
 .sider {
     margin-top: 50px;
     width: 224px;
-    background: #404040;
+    background: #1c2b36;
     position: absolute;
     overflow: visible;
     padding-bottom: 24px;
     height: 100%;
     transition: all 0.3s ease;
 }
+.sider.submenu{
+    background: #000;
+}
 .header{
     margin-left: -224px;
+    border-bottom: 1px solid #e7eaec !important;
 }
 .breadcrumb {
     padding-left: 11px;
@@ -31,7 +41,10 @@ body{
     transition: all 0.3s ease;
 }
 .contentContainer{
-   background: #fff;
+    background: #fff;
     margin: 15px;
-    height: 440px;
+    height: 100%;
+    border: 1px solid #dee5e7;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
