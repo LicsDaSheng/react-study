@@ -1,6 +1,5 @@
 import React, { PropTypes } from 'react';
-import { Button } from 'antd';
-import styles from './UserSearch.less';
+import { Button } from 'antd'
 
 function UserSearch({
 	form,
@@ -10,10 +9,10 @@ function UserSearch({
 	onAdd
 }) {
 	return (
-		<div className={styles.normal}>
-	      <div className={styles.search}>
+		<div >
+	      <div >
 	      </div>
-	      <div className={styles.create}>
+	      <div >
 	        <Button type="ghost" onClick={onAdd}>添加</Button>
 	      </div>
     	</div>

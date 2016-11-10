@@ -17,10 +17,7 @@ function Header({ location }){
 
 	return (
 		 <Row className={styles.header}>
-            	<Col span={24} offset={0}>
-            		<div>
-                		<h2 className={styles.logo}><Icon type="windows" /> SaaS 管理台</h2>
-                	</div> 
+            	<Col span={24} offset={0}>            		
                 	<div className={styles.menu}>
 		            	<h4 className={styles.welcome}><Icon type="github"/>  欢迎您，Admin</h4>
 						<Button type="primary" ><Link to="/"><Icon type="home"/>首页</Link></Button>
