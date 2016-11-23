@@ -10,7 +10,7 @@ const UserList = ({
 	loading,
 	dataSource,
 })=>{
-	//定义表结构
+//定义表结构
 	const columns=[{
 		title: '姓名',
 	    dataIndex: 'name',

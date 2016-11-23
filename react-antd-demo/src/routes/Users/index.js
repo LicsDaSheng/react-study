@@ -14,7 +14,16 @@ function Users({ location, dispatch, users}){
 	} = users;
 
 
-	const userSearchProps = {};
+	const userSearchProps = {
+		field,
+		keyword,
+		onSearch(fieldsValue){
+			console.log('onsearch');
+		},
+		onAdd(){
+			console.log('onadd');
+		}
+	};
 	const userListProps ={
 		dataSource: list,
 		total,
@@ -39,9 +48,8 @@ Users.propTypes = {
 };
 
 //制定订阅的数据 关联users
-function mapStateToProps({ aaa }) {
-  console.log('aaa=');
-  return { users: aaa };
+function mapStateToProps({ target }) {
+  return { users: target };
 }
 
 export default  connect(mapStateToProps)(Users);

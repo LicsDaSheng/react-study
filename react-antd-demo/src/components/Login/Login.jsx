@@ -5,39 +5,39 @@ import styles from './Login.less';
 const Login = (localtion) => {
   return (
     <div className={styles.loginForm}>
-    
+
       <strong>SaaS管理台</strong>
- 
+      <br />
 
-        
-            <Form horizontal className="login-form">
-              <Form.Item
-                label='用户名：'
-                labelCol={{ span: 6 }}
-                wrapperCol={{ span: 14 }}
-                >
 
-                <Input placeholder='admin' />
+      <Form horizontal>
+        <Form.Item
+          label='用户名：'
+          labelCol={{ span: 6 }}
+          wrapperCol={{ span: 14 }}
+          >
 
-              </Form.Item>
-              <Form.Item
-                label='密码：'
-                labelCol={{ span: 6 }}
-                wrapperCol={{ span: 14 }}
-                >
+          <Input placeholder='admin' />
 
-                <Input type='password' placeholder='123456' />
+        </Form.Item>
+        <Form.Item
+          label='密码：'
+          labelCol={{ span: 6 }}
+          wrapperCol={{ span: 14 }}
+          >
 
-              </Form.Item>
-              
-                  <a href="#"><Button type='primary'  >确定</Button>  </a>
-                  &nbsp;&nbsp;&nbsp;
+          <Input type='password' placeholder='123456' />
+
+        </Form.Item>
+
+        <a href="#"><Button type='primary'  >确定</Button>  </a>
+        &nbsp;&nbsp;&nbsp;
                     <Button type='primary' >重置</Button>
-              
-            </Form>
-          
-       
-    
+
+      </Form>
+
+
+
     </div>
 
   );
